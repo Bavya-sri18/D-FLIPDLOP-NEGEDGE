@@ -8,8 +8,6 @@ To implement  D flipflop using verilog and validating their functionality using 
 
 Quartus prime
 
-**THEORY**
-
 **D Flip-Flop**
 
 D flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, D latch operates with enable signal. That means, the output of D flip-flop is insensitive to the changes in the input, D except for active transition of the clock signal. The circuit diagram of D flip-flop is shown in the following figure.
@@ -28,23 +26,21 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 **Procedure**
 
-1.Define Module: Define a Verilog module for the D flip-flop with inputs (D, CLK) and outputs (Q, Q_bar).
+1. Type the program in Quartus software.
 
-2.Declare Inputs and Outputs: Declare input and output ports for the module.
+2.Compile and run the program.
 
-3.Implement Flip-Flop Logic: Write Verilog code to implement the D flip-flop logic based on its functional table. Use a synchronous always @(posedge CLK) block to trigger the flip-flop on the positive edge of the clock signal.
+3. Generate the RTL schematic and save the logic diagram.
 
-4.Simulate Using Testbench: Write a Verilog testbench to simulate the behavior of the D flip-flop under different input conditions.
+4. Create nodes for inputs and outputs to generate the timing diagram.
 
-5.Apply Input Stimuli: In the testbench, apply various combinations of input stimuli (D, CLK) to cover all possible input states.
-
-6.Verify Output Behavior: Verify that the output behavior of the D flip-flop matches the expected behavior defined by its functional table.
-
-7.Check for Race Conditions: Ensure that there are no race conditions or undefined states in the design by analyzing the timing and sequence of input changes.
+5. For different input combinations generate the timing diagram.
 
 **PROGRAM**
 
- Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by:Bavya Sri.B RegisterNumber: 24900078
+ Program for flipflops and verify its truth table in quartus using Verilog programming.
+ 
+ Developed by:Bavya Sri.B RegisterNumber: 24900078
 ```
 module funct8(d, clk, rst, q);
   input d, clk, rst;
@@ -63,7 +59,9 @@ endmodule
 ![ex-8 output 1](https://github.com/user-attachments/assets/10cddfb6-9ac7-4d6d-855a-18b3c24f953e)
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-![ex-8 output 2](https://github.com/user-attachments/assets/6f575d01-6858-4fcc-b75e-232083fb0a6a)
+
+![image](https://github.com/user-attachments/assets/d9daa883-6dd3-4691-a2ec-69ece9e9cc8c)
+
 
 
 **RESULTS**
